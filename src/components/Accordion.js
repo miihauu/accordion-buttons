@@ -24,7 +24,7 @@ class Accordion extends React.Component {
                 <div className="accordion__header" onClick={this.collapse} >
 
                     <div className="accordion__title">
-                        <span>Title of accordion</span>
+                        <span>{this.props.title}</span>
                     </div>
 
                     <div className="accordion__button">
@@ -34,8 +34,7 @@ class Accordion extends React.Component {
                 </div>
             </div>
                <div className={this.state.isOpen ? `accordion__content` : 'accordion__content--none'}>
-                        <span>A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases. 
-                            Originally, nebula was a name for any diffuse astronomical object, including galaxies beyond the Milky Way.</span>
+                        <span>{this.props.children}</span>
                 </div>
                 </div>
          );
