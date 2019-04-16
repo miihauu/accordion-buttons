@@ -32,7 +32,7 @@ class AccordionGroup extends React.Component {
                     [title]: !isOpen
                 }
             });
-        } else {+
+        } else {
             this.setState({
                 openSections: {
                     [title]: !isOpen
